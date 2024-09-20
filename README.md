@@ -1,1 +1,1 @@
-# thermometer--with-pointers
+# thermometer-with-pointers
