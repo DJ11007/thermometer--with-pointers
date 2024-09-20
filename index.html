@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thermometer with Pointers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="thermometer-container">
+        <div class="thermometer">
+            <div class="section max">MAX</div>
+            <div class="section high">HIGH</div>
+            <div class="section normal">NORMAL</div>
+            <div class="section medium">MEDIUM</div>
+            <div class="section low">LOW</div>
+            <div class="section no">NO</div>
+        </div>
+
+        <!-- Apple Pointer -->
+        <div class="apple-label-wrapper">
+            <div class="label apple-label">Apple</div>
+            <img src="images/arrow-right.png" alt="arrow right">
+        </div>
+
+        <!-- IBM Pointer -->
+        <div class="ibm-label-wrapper">
+            <img src="images/arrow-left.png" alt="arrow left">
+            <div class="label ibm-labels">
+                IBM <span class="percentage">45%</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Input fields for IBM and Apple values -->
+    <div class="input-container">
+        <label for="apple-input">Apple:</label>
+        <input type="number" id="apple-input" max="100" min="0" value="0">
+        <label for="ibm-input">IBM:</label>
+        <input type="number" id="ibm-input" max="100" min="0" value="0">
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

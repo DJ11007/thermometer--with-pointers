@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.thermometer-container {
+    position: relative;
+    width: 150px;
+}
+
+.thermometer {
+    width: 100px;
+    height: 600px;
+    border-radius: 70px;
+    background-color: #e0e0e0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 20px solid #ccc;
+    position: relative;
+    gap: 2px;
+}
+
+.section {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.max { background-color: #50B91F; flex: 1; }
+.high { background-color: #8BE000; flex: 1; }
+.normal { background-color: #B8DE17; flex: 1; }
+.medium { background-color: #FFD203; flex: 1; }
+.low { background-color: #FE8500; flex: 1; }
+.no { background-color: #EE2805; flex: 1; }
+
+.label {
+    width: 80px;
+    background-color: #A3E4D7;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #333;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apple-label-wrapper {
+    position: absolute;
+    top: 122px;
+    left: -130px;
+    display: flex;
+    align-items: center;
+}
+
+.ibm-label-wrapper {
+    position: absolute;
+    top: 290px;
+    right: -80px;
+    display: flex;
+    align-items: center;
+}
+
+.apple-label img,
+.ibm-label img {
+    width: 60px;
+    height: 20px;
+}
+
+.percentage {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+img {
+width: 60px;
+height: 20px;
+}
